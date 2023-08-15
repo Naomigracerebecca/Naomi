@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .joli-tableau {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: violet;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .joli-tableau th, .joli-tableau td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .joli-tableau th {
+    background-color: #0b0a0a;
+    color: white;
+  }
+  
+  .joli-tableau tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .joli-tableau tbody tr:hover {
+    background-color: rebeccapurple;
+  }
+  

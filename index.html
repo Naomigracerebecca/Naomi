@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tableau Extravagant</title>
+<style>
+  /* Les styles CSS du tableau */
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<table id="extravagant-table">
+  <thead>
+    <tr>
+      <th>Colonne 1</th>
+      <th>Colonne 2</th>
+      <th>Colonne 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ligne 1, Colonne 1</td>
+      <td>Ligne 1, Colonne 2</td>
+      <td>Ligne 1, Colonne 3</td>
+    </tr>
+    <tr>
+      <td>Ligne 2, Colonne 1</td>
+      <td>Ligne 2, Colonne 2</td>
+      <td>Ligne 2, Colonne 3</td>
+    </tr>
+    <tr>
+      <td>Ligne 3, Colonne 1</td>
+      <td>Ligne 3, Colonne 2</td>
+      <td>Ligne 3, Colonne 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  // Récupérer le tableau par son ID
+  const table = document.getElementById('extravagant-table');
+
+  // Ajouter un gestionnaire d'événement au tableau pour changer la couleur de fond des cellules au survol de la souris
+  table.addEventListener('mouseover', (event) => {
+    const target = event.target;
+    if (target.tagName === 'TD') {
+      target.style.backgroundColor = 'lightgray';
+    }
+  });
+
+  // Rétablir la couleur d'arrière-plan d'une cellule lorsque la souris quitte la cellule
+  table.addEventListener('mouseout', (event) => {
+    const target = event.target;
+    if (target.tagName === 'TD') {
+      target.style.backgroundColor = '';
+    }
+  });
+</script>
+
+
+
+
+
+
+</body>
+</html>
